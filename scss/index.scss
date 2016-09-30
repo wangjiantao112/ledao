@@ -1,0 +1,27 @@
+@charset "utf-8";
+@import "global";
+
+.loginbg{
+    background: url("../images/loginbg.png") no-repeat;
+    background-size: cover;
+}
+.logo{
+    width:$rem250;
+}
+.inputBox{
+    height: $rem108;
+    line-height: $rem108;
+    position: relative;
+    font-size: $rem30;
+    input{
+    	position: absolute;
+    	right: $rem198;
+    	background:rgba(255,255,255,0.9);
+    	line-height: $rem100;
+    }
+}
+.loginBtn{
+	height:$rem100;
+	line-height:$rem100;
+	
+}

@@ -1,0 +1,220 @@
+@charset "utf-8";
+@import "resect";
+@import "_size";
+
+.jy-h20{
+    height: $rem18;
+}
+
+.jy-h100{
+    height: 100%;
+}
+.jy-w20{
+    width: $rem18;
+}
+
+.jy-w100{
+    width: 100%;
+}
+.jy-hidden{
+    overflow: hidden;
+}
+.jy-txcenter{
+    text-align: center;
+}
+/*字体颜色*/
+.jy-color-444444{
+    color:#444
+}
+.jy-color-444{
+    color:#444
+}
+.jy-color-bbb{
+    color:#bbb;
+}
+.jy-color-bbbbbb{
+    color:#bbb;
+}
+.jy-color-666{
+    color:#666
+}
+.jy-color-666666{
+    color: #666;
+}
+.jy-color-999{
+    color:#999
+}
+.jy-color-999999{
+    color:#999
+}
+.jy-color-ff8022{
+    color:#ff8022;
+}
+.jy-color-fff{
+    color:#fff
+}
+.jy-color-ffffff{
+    color:#fff
+}
+/*字体大小*/
+.jy-ft20{
+    font-size: $rem20;
+}
+
+.jy-ft28{
+    font-size:0.875rem;
+}
+
+.jy-ft30{
+    font-size:$rem30;
+}
+
+.jy-ft34{
+    font-size:$rem34;
+}
+/*背景颜色*/
+.jy-bgcolor-ff8022{
+    background: #ff8022;
+}
+.jy-bgcolorop97-fff{
+    background: rgba(255,255,255,.97);
+}
+/*定位*/
+.jy-pos{
+    position: absolute;
+}
+.jy-pre{
+    position: relative;
+}
+/*边距*/
+.jy-pl10{
+    padding-left:$rem10;
+}
+.jy-pl30{
+    padding-left: $rem30;
+}
+.jy-pr28{
+    padding-right:$rem28;
+}
+.jy-pr30{
+    padding-right:  $rem30;
+}
+.jy-mt200{
+    margin-top:  $rem200;
+}
+.jy-mt16{
+    margin-top: $rem16;
+}
+.jy-mt40{
+    margin-top:  $rem40;
+}
+.jy-mt50{
+    margin-top:  $rem50;
+}
+.jy-mt60{
+    margin-top: $rem60;
+}
+.jy-box{
+    box-sizing: border-box;
+}
+//圆角
+.jy-border-radius5{
+    border-radius:$rem5;
+}
+// 浮动
+.jy-fl{
+    float: left;
+}
+
+.jy-fr{
+    float: right;
+}
+// 弹层
+.jy-alertBox{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    background:rgba(0,0,0,.8);
+    .jy-alert{
+        position: absolute;
+        background:#fff;
+        width: 72%;
+        left: 50%;
+        top:50%;
+        -webkit-transform: translate(-50%,-50%);
+        padding:$rem60;
+        border-radius:$rem6;
+    }
+}
+/*--解决ipone 1像素边框变2像素问题：--*/
+.border-1px-ff8022 { position: relative; }
+.border-1px-ff8022:before {
+    display: block;
+    content: '';
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: scale(1);
+    pointer-events: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .border-1px-ff8022:before { right: -100%; bottom: -95%; -webkit-transform: scale(0.5);}
+}
+.border-1px-ff8022.border-all:before { border: 1px solid #ff8022; }
+.border-1px-ff8022.border-top:before { border-top: 1px solid #ff8022; }
+.border-1px-ff8022.border-bottom:before { border-bottom: 1px solid #ff8022;}
+.border-1px-ff8022.border-bottom-lf:before{ border-bottom: 1px solid #ff8022;}
+.border-1px-ff8022.border-bottom-gray:before { border-bottom: 1px solid #303034; }
+.border-1px-ff8022.border-left:before { border-left: 1px solid #ff8022; }
+.border-1px-ff8022.border-right:before { border-right: 1px solid #ff8022; }
+
+/*--解决ipone 1像素边框变2像素问题：--*/
+.border-1px-dddddd { position: relative; }
+.border-1px-dddddd:before {
+    display: block;
+    content: '';
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: scale(1);
+    pointer-events: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .border-1px-dddddd:before { right: -100%; bottom: -95%; -webkit-transform: scale(0.5);}
+}
+.border-1px-dddddd.border-all:before { border: 1px solid #dddddd; }
+.border-1px-dddddd.border-top:before { border-top: 1px solid #dddddd; }
+.border-1px-dddddd.border-bottom:before { border-bottom: 1px solid #dddddd;}
+.border-1px-dddddd.border-bottom-lf:before{ border-bottom: 1px solid #dddddd;}
+.border-1px-dddddd.border-bottom-gray:before { border-bottom: 1px solid #303034; }
+.border-1px-dddddd.border-left:before { border-left: 1px solid #dddddd; }
+.border-1px-dddddd.border-right:before { border-right: 1px solid #dddddd; }
+// 动画
+.bouncein{
+-webkit-animation:bounceIn .2s  ease both;}
+@-webkit-keyframes bounceIn{
+0%{opacity:0;-webkit-transform:scale(1.3)}
+50%{opacity:1;}
+100%{-webkit-transform:scale(1)}
+}
+
+.bounceout{
+-webkit-animation:bounceOut .2s ease both;}
+@-webkit-keyframes bounceOut{
+0%{opacity:1;-webkit-transform:scale(1)}
+100%{opacity:0;-webkit-transform:scale(1.3)}
+}
